@@ -1,10 +1,25 @@
 import React from 'react';
 import Header from './Header';
+import Scroller from './Scroller';
+import ButtonContainer from './ButtonContainer';
+import { Switch, Route } from 'react-router-dom';
+import HomePage from './HomePage';
+import Favorites from './Favorites';
+import People from './People';
+import Vehicles from './Vehicles';
+import Planets from './Planets';
+
 
 const Main = () => {
   return (
     <div>
-      <Header />
+      <Switch>
+        <Route exact path='/' component={HomePage}/>
+        <Route path='/favorites' component={Favorites}/>
+        <Route path='/people' component={People}/>
+        <Route path='/vehicles' component={Vehicles}/>
+        <Route path='/planets' component={Planets}/>
+      </Switch>
     </div>
   )
 }

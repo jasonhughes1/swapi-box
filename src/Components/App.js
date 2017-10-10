@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import Scroller from './Scroller';
 import Main from './Main';
 import '../scss/App.css';
-
 
 class App extends Component {
   // constructor() {
@@ -19,7 +17,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Scroller />
         <Main />
       </div>
     );
