@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import css from '../scss/ButtonContainer.css';
 
 const ButtonContainer = () => {
     return (
@@ -15,6 +16,9 @@ const ButtonContainer = () => {
         </button>
         <button className='favorites-button'>
           <Link to='/favorites'>Favorites</Link>
+        </button>
+        <button className='home'>
+          <Link to='/'>Home</Link>
         </button>
 
       </div>

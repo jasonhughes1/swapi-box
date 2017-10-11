@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Main from './Main';
 import '../scss/App.css';
 import HomePage from './HomePage';
+import Scroller from './Scroller';
 
 class App extends Component {
   constructor() {
@@ -9,6 +10,7 @@ class App extends Component {
     this.state = {
       starWarsData: null,
     }
+    this.retreiveStarWarsData();
   }
 
   componentDidMount() {
@@ -29,18 +31,27 @@ class App extends Component {
         })
       })
     .catch((e) => {console.log(e)})
-    // return new Promise( ( resolve, reject ) => {
-    //     Promise.all( [vehicles, people, planets] ).then((data) => {
-    //       this.setState({
-    //         data: data
-    //       },    console.log(data));
-    //
-    //       resolve();
-    //     })
-    //     .catch(e => {reject(e)})
-    // })
   }
 
+
+  // render() {
+  //   const { data } = this.state
+  //
+  //   if(data) {
+  //     return (
+  //       <div className="App">
+  //         <Scroller starWarsData={this.state.data[0].results} />
+  //         <Main />
+  //       </div>
+  //     )
+  //   } else {
+  //     return (
+  //       <div>
+  //         Loading
+  //       </div>
+  //     )
+  //   }
+  // }
 
   render() {
     console.log(this.state.starWarsData);
