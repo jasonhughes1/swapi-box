@@ -1,12 +1,15 @@
 import React from 'react';
+import './Card.css';
 
 const Card = ({ cardData }) => {
   const cardKeys = Object.keys(cardData)
 
   return (
     <article className='card'>
-      <button></button>
-      <h3>{cardData.Name}</h3>
+      <div className='card-top'>
+        <h3 className='card-title'>{cardData.Name}</h3>
+        <button className='favorite-btn'>*</button>
+      </div>
       <h4>{cardKeys[1]}: </h4>
       <p>{cardData.Homeworld}</p>
       <h4>{cardKeys[2]}: </h4>

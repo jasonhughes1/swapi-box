@@ -1,0 +1,28 @@
+.card {
+  height: 350px;
+  width: 300px;
+  margin: 10px;
+  background-color: #2f2f2f;
+  border: 5px solid #feda4a;
+  color: gray;
+  cursor: pointer;
+}
+
+.card:hover {
+  border: 5px solid #32cd32;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-title {
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.favorite-btn {
+  height: 50px;
+  width: 50px;
+}
