@@ -1,18 +1,32 @@
 import React from 'react';
+import './Card.css';
 
 const Card = ({ cardData, setFavorite }) => {
   const cardKeys = Object.keys(cardData)
+  const cards = cardKeys.map((prop, i) => {
+    const card = cardData[propReturn(prop)]
+
+    return (
+      <div key={i}>
+        <h3>{prop}</h3>
+        <p>{card}</p>
+      </div>
+    )
+  })
+
+  function propReturn(prop) {
+    if (prop === 'Residents') {
+      cardData.Residents = cardData.Residents.map(resident => resident.name + ' ')
+      return prop
+    } else {
+      return prop
+    }
+  }
 
   return (
     <article className='card'>
       <button onClick={() => setFavorite(cardData)}>Favorite</button>
-      <h3>{cardData.Name}</h3>
-      <h4>{cardKeys[1]}: </h4>
-      <p>{cardData.Homeworld}</p>
-      <h4>{cardKeys[2]}: </h4>
-      <p>{cardData.Species}</p>
-      <h4>{cardKeys[3]}: </h4>
-      <p>{cardData.Population}</p>
+      { cards }
     </article>
   )
 
