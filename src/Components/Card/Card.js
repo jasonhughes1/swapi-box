@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({ cardData, setFavorite }) => {
+const Card = ({ cardData, setFavorite, toggleActive }) => {
   const cardKeys = Object.keys(cardData)
   const cards = cardKeys.map((prop, i) => {
     const card = cardData[propReturn(prop)]
@@ -25,7 +25,7 @@ const Card = ({ cardData, setFavorite }) => {
 
   return (
     <article className='card'>
-      <button onClick={() => setFavorite(cardData)}>Favorite</button>
+      <button className='favorite-btn' toggleActive={toggleActive} onClick={() => setFavorite(cardData)}>Favorite</button>
       { cards }
     </article>
   )

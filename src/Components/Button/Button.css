@@ -1,10 +1,23 @@
 .button {
   height: 75px;
   width: 150px;
+  border: 3px solid #2f2f2f;
   cursor: pointer;
   font-family: inherit;
   font-size: 20px;
   outline: none;
+}
+
+.button:hover {
+  background-color: #32cd32;
+}
+
+.button:active {
+}
+
+.active {
+  background-color: #2f2f2f;
+  color: #fff;
 
 }
 

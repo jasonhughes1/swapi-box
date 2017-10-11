@@ -16,6 +16,7 @@ class App extends Component {
     this.changeCards = this.changeCards.bind(this);
     this.setFavorite = this.setFavorite.bind(this);
     this.favClicked = this.favClicked.bind(this);
+    this.toggleActive = this.toggleActive.bind(this);
   }
   componentDidMount() {
     const films = fetch('https://swapi.co/api/films/').then(data => data.json())
@@ -101,6 +102,11 @@ class App extends Component {
       favorites.push(cardData)
     }
   }
+  toggleActive(button) {
+    const buttons = document.querySelectorAll('.active')
+    buttons.forEach(button => button.classList.remove('active'))
+    button.classList.toggle('active')
+  }
   favClicked() {
     this.setState({ favClicked: true})
   }
@@ -117,11 +123,11 @@ class App extends Component {
     if(data) {
       return (
         <div className="App">
-          <Scroll data={data[0]} opening={opening} btnFn={this.favClicked}/>
+          <Scroll data={data[0]} toggleActive={this.toggleActive} opening={opening} btnFn={this.favClicked}/>
           <div className='button-container'>
-            <Button buttonText='people' className={'button main-btn'} num={1} btnFn={this.changeCards}/>
-            <Button buttonText='planets' className={'button main-btn'} num={2} btnFn={this.changeCards}/>
-            <Button buttonText='vehicles' className={'button main-btn'} num={3} btnFn={this.changeCards} />
+            <Button buttonText='people' className={'button main-btn active'} toggleActive={this.toggleActive} num={1} btnFn={this.changeCards}/>
+            <Button buttonText='planets' className={'button main-btn'} toggleActive={this.toggleActive} num={2} btnFn={this.changeCards}/>
+            <Button buttonText='vehicles' className={'button main-btn'} toggleActive={this.toggleActive} num={3} btnFn={this.changeCards} />
           </div>
           <CardContainer cardType={this.cardSet()} setFavorite={this.setFavorite} />
         </div>
