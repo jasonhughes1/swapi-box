@@ -4,7 +4,7 @@ import Card from '../Card/Card';
 const CardContainer = ({ cardType }) => {
 
   const cards = cardType.map((card, index) =>
-    <Card cardData={cardType[index]} key={index} />
+    <Card cardData={card} key={index} />
   )
 
   return (
