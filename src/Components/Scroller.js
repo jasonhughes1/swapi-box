@@ -1,13 +1,18 @@
 import React from 'react';
+import Crawl from 'react-star-wars-crawl'
+import '../scss/Scroller.scss';
 
-const Scroller = (starWarsData) => {
-
-  const indexRandomizer = Math.floor(Math.random() * (5 - 0 + 1))
-  const displayScrollText = starWarsData[indexRandomizer]
-  console.log('scroller ', starWarsData);
+const Scroller = ({data}) => {
+  const generateRandomIndex = Math.floor(Math.random() * (7 - 0 + 1))
+  const text = data[generateRandomIndex].opening_crawl
   return (
-    <div className="scroller">
-      <p>{displayScrollText}</p>
+    <div>
+      <div className='fade'></div>
+      <div className='star-wars'>
+        <div className='crawl'>
+          <p className='crawl-text'>{text}</p>
+        </div>
+      </div>
     </div>
   )
 }

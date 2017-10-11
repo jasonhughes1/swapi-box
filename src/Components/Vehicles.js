@@ -1,5 +1,6 @@
 import React from 'react';
 import ButtonContainer from './ButtonContainer';
+import CardContainer from './CardContainer';
 import css from '../scss/vehicles.css';
 
 const Vehicles = () => {
@@ -7,6 +8,7 @@ const Vehicles = () => {
     <div className="vehicles">
       <ButtonContainer />
       <p>Cards of Vehicles</p>
+      <CardContainer />
     </div>
   )
 }

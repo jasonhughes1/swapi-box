@@ -1,6 +1,8 @@
 import React from 'react';
 import ButtonContainer from './ButtonContainer';
+import CardContainer from './CardContainer';
 import css from '../scss/people.css';
+
 
 const People = () => {
   // constructor() {
@@ -13,6 +15,7 @@ const People = () => {
     <div className="people">
       <ButtonContainer />
       <p>Cards of People</p>
+      <CardContainer />
     </div>
   )
 }
