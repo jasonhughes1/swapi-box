@@ -1,11 +1,9 @@
 import React from 'react';
 
-const Scroll = ({ retrieveData }) => {
-  const scrollText = retrieveData('films')
+const Scroll = ({data}) => {
 
   return (
     <div className='scroll'>
-      <p>{scrollText}</p>
     </div>
   )
 }
