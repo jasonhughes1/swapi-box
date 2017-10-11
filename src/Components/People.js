@@ -1,5 +1,6 @@
 import React from 'react';
 import ButtonContainer from './ButtonContainer';
+import css from '../scss/people.css';
 
 const People = () => {
   // constructor() {
@@ -9,7 +10,7 @@ const People = () => {
   //   }
   // }
   return (
-    <div>
+    <div className="people">
       <ButtonContainer />
       <p>Cards of People</p>
     </div>
