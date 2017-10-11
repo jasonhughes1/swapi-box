@@ -1,7 +1,8 @@
 .card {
-  height: 350px;
-  width: 300px;
+  height: 500px;
+  width: 350px;
   margin: 10px;
+  padding: 10px;
   background-color: #2f2f2f;
   border: 5px solid #feda4a;
   color: gray;
@@ -23,6 +24,10 @@
 }
 
 .favorite-btn {
+  margin-top: 10px;
   height: 50px;
-  width: 50px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: inherit;
 }
