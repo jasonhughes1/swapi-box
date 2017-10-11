@@ -2,19 +2,17 @@ import React from 'react';
 import './Scroll.css';
 import Button from '../Button/Button';
 
-const Scroll = ({data}) => {
-
-  const randomIndex = Math.floor(Math.random() * (6 - 0 + 1))
-  const text = data[randomIndex].opening_crawl
-  const filmTitle = data[randomIndex].title
-  const releaseDate = data[randomIndex].release_date
+const Scroll = ({data, opening, btnFn}) => {
+  const text = data[opening].Opening
+  const filmTitle = data[opening].Title
+  const releaseDate = data[opening].Release
 
   return (
     <div>
       <div className='crawl-container'>
         <div className='fade'>
           <h1 className='title'>SWAPI-BOX</h1>
-          <Button className={' button favorite'} buttonText='View Favorites' />
+          <Button className={' button favorite'} buttonText='View Favorites' btnFn={btnFn} />
         </div>
         <div className='star-wars'>
           <div className='crawl'>
