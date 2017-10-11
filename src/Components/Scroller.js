@@ -1,4 +1,5 @@
 import React from 'react';
+import Crawl from 'react-star-wars-crawl'
 import '../scss/Scroller.scss';
 
 const Scroller = ({data}) => {
