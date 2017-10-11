@@ -1,15 +1,12 @@
 import React from 'react';
-import './Card.css';
 
-const Card = ({ cardData }) => {
+const Card = ({ cardData, setFavorite }) => {
   const cardKeys = Object.keys(cardData)
 
   return (
     <article className='card'>
-      <div className='card-top'>
-        <h3 className='card-title'>{cardData.Name}</h3>
-        <button className='favorite-btn'>*</button>
-      </div>
+      <button onClick={() => setFavorite(cardData)}>Favorite</button>
+      <h3>{cardData.Name}</h3>
       <h4>{cardKeys[1]}: </h4>
       <p>{cardData.Homeworld}</p>
       <h4>{cardKeys[2]}: </h4>
