@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 const ButtonContainer = () => {
     return (
       <div>
+        <button className='home-button'>
+          <Link to='/'>Home</Link>
+        </button>
         <button className='people-button'>
           <Link to='/people'>People</Link>
         </button>
