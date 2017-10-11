@@ -1,20 +1,18 @@
 import React from 'react';
 
 const Card = ({ cardData }) => {
+  const cardKeys = Object.keys(cardData)
 
-  // console.log(cardData);
   return (
     <article className='card'>
       <button></button>
-      <h3>{/*name*/}</h3>
-      <h4>homeworld: </h4>
-      <p>{/*homeworld*/}</p>
-      <h4>species: </h4>
-      <p>{/*species*/}</p>
-      <h4>language: </h4>
-      <p>{/*language*/}</p>
-      <h4>population: </h4>
-      <p>{/*population*/}</p>
+      <h3>{cardData.Name}</h3>
+      <h4>{cardKeys[1]}: </h4>
+      <p>{cardData.Homeworld}</p>
+      <h4>{cardKeys[2]}: </h4>
+      <p>{cardData.Species}</p>
+      <h4>{cardKeys[3]}: </h4>
+      <p>{cardData.Population}</p>
     </article>
   )
 
