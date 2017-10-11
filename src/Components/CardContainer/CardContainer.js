@@ -3,6 +3,7 @@ import Card from '../Card/Card';
 import './CardContainer.css';
 
 const CardContainer = ({ cardType, setFavorite }) => {
+  console.log(cardType);
 
   const cards = cardType.map((card, index) =>
     <Card cardData={card} key={index} setFavorite={setFavorite}/>
