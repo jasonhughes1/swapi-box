@@ -1,13 +1,10 @@
 .button {
   height: 75px;
   width: 150px;
-  cursor: pointer;
-  font-family: inherit;
   font-size: 20px;
-  outline: none;
+  z-index: 100;
 }
 
 .favorite {
-  width: 250px;
   margin-right: 50px;
 }
