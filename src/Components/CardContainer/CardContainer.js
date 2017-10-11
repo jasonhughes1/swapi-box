@@ -7,7 +7,6 @@ const CardContainer = () => {
 
   return (
     <div className='card-container'>
-      {Card}
     </div>
   )
 
