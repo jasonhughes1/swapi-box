@@ -8,12 +8,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: null,
-      i: 1,
-      favorites: {}
+      data: null
     }
-    this.changeCards = this.changeCards.bind(this);
-    this.setFavorite = this.setFavorite.bind(this);
   }
 
 
@@ -81,9 +77,8 @@ class App extends Component {
   }
 
   cleanData(data) {
-    const filmOpenings = data[0].results.map(obj => {
-      return Object.assign({}, {Opening: obj.opening_crawl, Title: obj.title, Release: obj.release_date})
-    })
+
+    const filmOpenings = data[0].results
 
     const mappedPeople = data[1].map(obj => {
       return Object.assign({}, {Name: obj.name, Homeworld: obj.Homeworld, Species: obj.Species, Population: obj.Population})
@@ -93,43 +88,32 @@ class App extends Component {
       return Object.assign({}, {Name: obj.name, Terrain: obj.terrain, Population: obj.population, Climate: obj.climate, Residents: obj.Residents})
     })
 
-    const vehicles = data[3].results.map(obj => {
-      return Object.assign({}, {Name: obj.name, Model: obj.model, Vehicle: obj.vehicle_class, Passengers: obj.passengers})
-    })
+    const vehicles = data[3].results
 
     return [filmOpenings, mappedPeople, mappedPlanets, vehicles]
   }
 
-  changeCards(num) {
-    this.setState({i: num})
-  }
-
-  setFavorite(cardData) {
-    console.log(cardData)
-    const { favorites } = this.state;
-
-    favorites.push(cardData)
-  }
-
   render() {
-    const { data, i } = this.state
-
+    const { data } = this.state
+console.log(data);
     if(data) {
+      console.log(data);
       return (
         <div className="App">
           <Scroll data={data[0]} />
           <div className='button-container'>
-            <Button buttonText='people' className={'button'} num={1} changeCards={this.changeCards}/>
-            <Button buttonText='planets' className={'button'} num={2} changeCards={this.changeCards}/>
-            <Button buttonText='vehicles' className={'button'} num={3} changeCards={this.changeCards} />
+            <Button buttonText='people' className={'button main-btn'}
+            />
+            <Button buttonText='planets' className={'button main-btn'} />
+            <Button buttonText='vehicles' className={'button main-btn'} />
           </div>
-          <CardContainer cardType={data[i]} setFavorite={this.setFavorite} />
+          <CardContainer cardType={data[1]} />
         </div>
       )
     } else {
       return (
         <div>
-          Loading
+          <h2 className='loading'>Loading...</h2>
         </div>
       )
     }
