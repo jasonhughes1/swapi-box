@@ -1,9 +1,10 @@
 import React from 'react';
 import ButtonContainer from './ButtonContainer';
+import css from '../scss/favorites.css';
 
 const Favorites = () => {
   return (
-    <div>
+    <div className="favorites">
       <ButtonContainer />
       <p>Cards of Favorites</p>
     </div>

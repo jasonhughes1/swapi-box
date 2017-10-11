@@ -3,6 +3,8 @@ import Main from './Main';
 import HomePage from './HomePage';
 import Scroller from './Scroller';
 import '../scss/App.css';
+import HomePage from './HomePage';
+import Scroller from './Scroller';
 
 class App extends Component {
   constructor() {
@@ -121,5 +123,6 @@ class App extends Component {
     }
   }
 }
+
 
 export default App;
