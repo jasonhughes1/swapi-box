@@ -7,15 +7,20 @@
   z-index: 1;
 }
 
+.title {
+  color: #fff;
+}
+
 .star-wars {
   display: flex;
   justify-content: center;
-  height: 300px;
+  height: 100px;
   color: #feda4a;
   font-size: 300%;
   letter-spacing: 6px;
   line-height: 150%;
   text-align: justify;
+  perspective: 200px;
 }
 
 .crawl {
@@ -23,7 +28,7 @@
   position: relative;
   top: -100px;
   transform-origin: 50% 100%;
-  animation: crawl 60s infinite linear;
+  animation: crawl 15s infinite linear;
 }
 
 @keyframes crawl {
@@ -32,7 +37,7 @@
     transform: rotateX(20deg) translateZ(0);
   }
   100% {
-    top: -6000px;
+    top: -1500px;
     transform: rotateX(25deg) translateZ(-2500deg);;
   }
 }

@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Card = () => {
+const Card = ({ cardData }) => {
 
+  // console.log(cardData);
   return (
-    <article>
+    <article className='card'>
       <button></button>
       <h3>{/*name*/}</h3>
       <h4>homeworld: </h4>

@@ -1,12 +1,15 @@
 import React from 'react';
 import Card from '../Card/Card';
 
-const CardContainer = () => {
+const CardContainer = ({ cardType }) => {
 
-  //map through array and render cards
+  const cards = cardType.map((card, index) =>
+    <Card cardData={cardType[index]} key={index} />
+  )
 
   return (
     <div className='card-container'>
+      {cards}
     </div>
   )
 
