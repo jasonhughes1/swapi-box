@@ -3,11 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "react": "^15.6.1",
     "react-router-dom": "^4.1.2",
     "react-scripts": "1.0.11"
-=======
     "babel-polyfill": "^6.26.0",
     "node-sass-chokidar": "0.0.3",
     "react": "^16.0.0",
@@ -16,7 +14,9 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "^1.0.14",
     "react-star-wars-crawl": "^1.0.1"
->>>>>>> master
+    "react": "^15.6.1",
+    "react-router-dom": "^4.1.2",
+    "react-scripts": "1.0.11"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,13 +25,11 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-<<<<<<< HEAD
     "enzyme": "^2.9.1",
     "fetch-mock": "^5.12.2",
     "react-addons-test-utils": "^15.6.0",
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1"
-=======
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "enzyme": "^3.1.0",
@@ -39,6 +37,10 @@
     "fetch-mock": "^5.13.1",
     "react-addons-test-utils": "^15.6.0",
     "react-test-renderer": "^16.0.0"
->>>>>>> master
+    "enzyme": "^2.9.1",
+    "fetch-mock": "^5.12.2",
+    "react-addons-test-utils": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1"
   }
 }
