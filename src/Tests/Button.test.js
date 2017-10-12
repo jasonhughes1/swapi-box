@@ -9,19 +9,19 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe('Button', () => {
   let wrapper;
-  const mockFn = jest.fn()
+  const mockFn = jest.fn();
 
   beforeEach(() => {
-    wrapper = shallow(<Button buttonText={'people'} className={'button'} num={2} btnFn={mockFn} toggleAvtive={mockFn} />)
-  })
+    wrapper = shallow(<Button />);
+  });
 
   it('should exist', () => {
-    expect(wrapper).toBeDefined()
-  })
+    expect(wrapper).toBeDefined();
+  });
 
 //   it('should pass through all the correct props', () => {
 //     expect(wrapper.props()).toHaveProperty('children', 'people')
 //     expect(wrapper.props()).toHaveProperty('className', 'button')
 //     expect(wrapper.props()).toHaveProperty('onClick')
 //   })
-})
+});

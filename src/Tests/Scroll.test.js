@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { mount, shallow } from 'enzyme';
 import Scroll from '../Components/Scroll/Scroll';
-import ScrollMock from './mockData/ScrollMock'
-import Button from '../Components/Button/Button'
+import ScrollMock from './mockData/ScrollMock';
+import Button from '../Components/Button/Button';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
@@ -14,7 +14,12 @@ describe('Scroll', () => {
   const mockFn = jest.fn()
 
   beforeEach(() => {
-    wrapper = shallow(<Scroll data={ScrollMock} toggleActive={mockFn} btnFn={mockFn} numFav={2} opening={3}/>)
+    wrapper = shallow(<Scroll
+      data={ScrollMock}
+      toggleActive={mockFn}
+      btnFn={mockFn}
+      numFav={2}
+      opening={3}/>)
   })
 
   it('should exist', () => {
@@ -26,7 +31,7 @@ describe('Scroll', () => {
 
     const title = wrapper.find('.title')
 
-    expect(title.text()).toEqual('SWAPI-BOX')
+    expect(title.text()).toEqual('STAR WARS')
     expect(wrapper.find('Button').length).toEqual(1)
   })
 
