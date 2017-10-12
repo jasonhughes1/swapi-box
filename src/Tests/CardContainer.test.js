@@ -41,13 +41,13 @@ describe('CardContainer', () => {
 
   it('should render cards to the page', () => {
     expect(wrapper.find('Card').length).toEqual(3)
-  })
+  });
 
-  it('should render a message to the page if there are no favorited cards', () => {
-    wrapper = mount(<CardContainer cardType={[]} setFavorite={mockFn} />)
-    const message = wrapper.find('.select-favs')
+  it('should render message if no favorited cards', () => {
+    wrapper = mount(<CardContainer cardType={[]} setFavorite={mockFn} />);
+    const message = wrapper.find('.select-favs');
 
-    expect(wrapper.find('Card').length).toEqual(0)
-    expect(message.text()).toEqual('There are currently no favorites...')
-  })
-})
+    expect(wrapper.find('Card').length).toEqual(0);
+    expect(message.text()).toEqual('There are currently no favorites...');
+  });
+});
