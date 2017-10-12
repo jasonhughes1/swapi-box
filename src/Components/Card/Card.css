@@ -1,7 +1,7 @@
 .card {
   border-radius: 25px;
-  height: 400px;
-  width: 350px;
+  height: 475px;
+  width: 175px;
   margin: 10px;
   padding: 10px;
   background-color: #2f2f2f;
@@ -18,7 +18,7 @@
   border-radius: 25px;
   margin-top: 10px;
   height: 50px;
-  width: 100px;
+  width: 75px;
   border: 3px solid #feda4a;
   cursor: pointer;
   font-size: 16px;

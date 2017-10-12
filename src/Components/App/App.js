@@ -15,6 +15,7 @@ class App extends Component {
       favClicked: false,
       favorites: []
     }
+
     this.changeCards = this.changeCards.bind(this);
     this.setFavorite = this.setFavorite.bind(this);
     this.favClicked = this.favClicked.bind(this);
@@ -39,7 +40,6 @@ class App extends Component {
           this.setState({data: this.cleanData(data)})
         })
       })
-
   }
 
   fetchHomeworld(data) {
