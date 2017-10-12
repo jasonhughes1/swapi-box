@@ -6,7 +6,6 @@ const Scroll = ({ data, opening, btnFn, toggleActive, numFav }) => {
   const text = data[opening].Opening
   const filmTitle = data[opening].Title
   const releaseDate = data[opening].Release
-  console.log(numFav);
 
   return (
     <div>
