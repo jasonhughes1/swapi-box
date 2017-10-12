@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: url("http://www.astronomy.com/-/media/Images/News%20and%20Observing/News/2014/09/DDO68.jpg?mw=600");
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 
 .button-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .gif-container {

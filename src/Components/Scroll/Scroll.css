@@ -33,9 +33,9 @@ body {
 .star-wars {
   display: flex;
   justify-content: center;
-  height: 800px;
-  color: blue;
-  font-size: 350%;
+  height: 600px;
+  color: white;
+  font-size: 150%;
   letter-spacing: 6px;
   line-height: 150%;
   text-align: justify;
@@ -43,10 +43,10 @@ body {
 }
 
 .crawl {
-  width: 75%;
+  width: 50%;
   position: relative;
   top: -100px;
-  transform-origin: 50% 100%;
+  transform-origin: 90% 90%;
   animation: crawl 30s infinite linear;
 }
 
