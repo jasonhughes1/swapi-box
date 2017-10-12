@@ -16,3 +16,7 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
+.gif-container {
+  text-align: center;
+}

@@ -3,7 +3,8 @@ import './App.css';
 import Scroll from '../Scroll/Scroll';
 import Button from '../Button/Button';
 import CardContainer from '../CardContainer/CardContainer';
-
+import GIF from './giphy-downsized-1 (dragged).tiff';
+console.log(GIF);
 class App extends Component {
   constructor() {
     super();
@@ -159,8 +160,8 @@ class App extends Component {
         <div className="App">
           <Scroll data={data[0]} toggleActive={this.toggleActive} opening={opening} btnFn={this.favClicked} numFav={favorites.length} />
           <div className='button-container'>
-            <Button buttonText='people' className={'button main-btn active'} toggleActive={this.toggleActive} num={1} btnFn={this.changeCards}/>
-            <Button buttonText='planets' className={'button main-btn'} toggleActive={this.toggleActive} num={2} btnFn={this.changeCards}/>
+            <Button buttonText='people' className={'button main-btn active'} toggleActive={this.toggleActive} num={1} btnFn={this.changeCards} />
+            <Button buttonText='planets' className={'button main-btn'} toggleActive={this.toggleActive} num={2} btnFn={this.changeCards} />
             <Button buttonText='vehicles' className={'button main-btn'} toggleActive={this.toggleActive} num={3} btnFn={this.changeCards} />
           </div>
           <CardContainer cardType={this.cardSet()} setFavorite={this.setFavorite} />
@@ -170,6 +171,9 @@ class App extends Component {
       return (
         <div>
           <h2 className='loading'>Loading...</h2>
+          <div className='gif-container'>
+            <img className='gif' src={ GIF } />
+          </div>
         </div>
       )
     }
