@@ -10,8 +10,7 @@
 }
 
 .card:hover {
-  border: 5px solid #32cd32;
-  transform: scale(1.05);
+  border: 4px solid white;
 }
 
 .favorite-btn {
