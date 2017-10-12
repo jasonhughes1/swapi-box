@@ -39,12 +39,16 @@ class App extends Component {
           .then(data => this.fetchSpecies(data));
         const Planets = this.fetchResidents(data[2].results);
 
+//could be a fucntion here
         return Promise.all([films, People, Planets, vehicles])
           .then(data => {
             this.setState({data: this.cleanData(data)});
           });
       });
   }
+
+  //nest into funcitons and work on controll flow
+  //Potential break out parts into other functions
 
   fetchHomeworld(data) {
     const specificHomeworldData = data.map((world) => {
