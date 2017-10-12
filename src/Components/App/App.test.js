@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import { mount, shallow } from 'enzyme';
 import fetchMock from 'fetch-mock';
 import App from './App';
-import AppMock from './AppMock'
+import AppMock from './AppMock';
 
 describe('App', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(<App />)
+    wrapper = mount(<App />);
 
     // Fetch Main Star Wars Data
     fetchMock.get('https://swapi.co/api/films/', {status: 200});
@@ -27,7 +27,7 @@ describe('App', () => {
 
 
 
-  })
+  });
 
   afterEach(() => {
     expect(fetchMock.calls().unmatched).toEqual([]);
@@ -41,12 +41,12 @@ describe('App', () => {
 
   it('displays an error if fetching groceries fails', () => {
 
-    expect(true)
-  })
+    expect(true);
+  });
 
   it.skip('should exist', () => {
-    expect(wrapper).toBeDefined()
-  })
+    expect(wrapper).toBeDefined();
+  });
 
 
-})
+});
