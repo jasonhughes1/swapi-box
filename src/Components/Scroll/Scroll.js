@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import Button from '../Button/Button';
 
 const Scroll = ({ data, opening, btnFn, toggleActive, numFav }) => {
-  const text = data[opening].Opening
-  const filmTitle = data[opening].Title
-  const releaseDate = data[opening].Release
+  const text = data[opening].Opening;
+  const filmTitle = data[opening].Title;
+  const releaseDate = data[opening].Release;
 
   return (
     <div>
@@ -15,7 +15,10 @@ const Scroll = ({ data, opening, btnFn, toggleActive, numFav }) => {
 
           <h1 className='title'>STAR WARS</h1>
 
-          <Button className={' button favorite'} toggleActive={toggleActive} buttonText={'View Favorites ' +   numFav} btnFn={btnFn} />
+          <Button className={' button favorite'}
+            toggleActive={toggleActive}
+            buttonText={'View Favorites ' +   numFav}
+            btnFn={btnFn} />
         </div>
         <div className='star-wars'>
           <div className='crawl'>
@@ -26,8 +29,8 @@ const Scroll = ({ data, opening, btnFn, toggleActive, numFav }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 Scroll.propTypes = {
   data: PropTypes.array.isRequired,
@@ -35,6 +38,6 @@ Scroll.propTypes = {
   btnFn: PropTypes.func,
   toggleActive: PropTypes.func,
   numFav: PropTypes.number
-}
+};
 
 export default Scroll;
