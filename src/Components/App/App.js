@@ -3,8 +3,8 @@ import './App.css';
 import Scroll from '../Scroll/Scroll';
 import Button from '../Button/Button';
 import CardContainer from '../CardContainer/CardContainer';
-import GIF from './giphy-downsized-1 (dragged).tiff';
-console.log(GIF);
+// import GIF from './giphy-downsized-1 (dragged).tiff';
+
 class App extends Component {
   constructor() {
     super();
@@ -172,7 +172,6 @@ class App extends Component {
         <div>
           <h2 className='loading'>Loading...</h2>
           <div className='gif-container'>
-            <img className='gif' src={ GIF } />
           </div>
         </div>
       )
