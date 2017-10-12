@@ -8,9 +8,14 @@ body {
 }
 
 .loading {
-  color: #fff;
-  font-size: 80px;
+
+  height: 120px;
+  color: #FFE510;
+  font-size: 100px;
   text-align: center;
+  background-color: black;
+  margin: auto;
+  padding-top: 30px;
 }
 
 .button-container {
@@ -20,4 +25,8 @@ body {
 
 .gif-container {
   text-align: center;
+}
+
+img {
+  width: 600px;
 }

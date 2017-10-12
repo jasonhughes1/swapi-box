@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { mount, shallow } from 'enzyme';
-import Button from './Button/Button';
+import Button from './Button';
 
 describe('Button', () => {
   // let wrapper;
@@ -9,4 +9,6 @@ describe('Button', () => {
   it('should exist', () => {
     expect(wrapper).toBeDefined()
   })
+
+
 })
