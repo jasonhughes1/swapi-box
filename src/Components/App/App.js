@@ -170,7 +170,7 @@ class App extends Component {
     } else {
       return (
         <div>
-          <h2 className='loading'>Loading...</h2>
+          <h2 className='loading'>Wait you must...</h2>
           <div className='gif-container'>
             <img className='gif' src={ GIF } />
           </div>
