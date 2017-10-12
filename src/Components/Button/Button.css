@@ -1,4 +1,5 @@
 .button {
+
   height: 55px;
   border-radius: 20px;
   width: 150px;
@@ -10,11 +11,9 @@
 }
 
 .button:hover {
-  background-color: #32cd32;
+  background-color: yellow;
 }
 
-.button:active {
-}
 
 .active {
   background-color: gray;
@@ -24,9 +23,12 @@
 
 .main-btn {
   margin-top: 50px;
+  width: 200px;
+  height: 50px;
 }
 
 .favorite {
-  width: 250px;
+  width: 200px;
+  height: 50px;
   margin-right: 50px;
 }

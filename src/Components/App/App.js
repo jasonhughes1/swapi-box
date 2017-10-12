@@ -15,6 +15,7 @@ class App extends Component {
       favClicked: false,
       favorites: []
     }
+
     this.changeCards = this.changeCards.bind(this);
     this.setFavorite = this.setFavorite.bind(this);
     this.favClicked = this.favClicked.bind(this);
@@ -39,7 +40,6 @@ class App extends Component {
           this.setState({data: this.cleanData(data)})
         })
       })
-
   }
 
   fetchHomeworld(data) {
@@ -170,7 +170,7 @@ class App extends Component {
     } else {
       return (
         <div>
-          <h2 className='loading'>Loading...</h2>
+          <h2 className='loading'>Wait you must...</h2>
           <div className='gif-container'>
             <img src={ GIF } />
           </div>

@@ -1,15 +1,17 @@
 .card {
-  height: 500px;
-  width: 350px;
+  border-radius: 25px;
+  height: 475px;
+  width: 175px;
   margin: 10px;
   padding: 10px;
   background-color: #2f2f2f;
-  border: 2px solid #3159D5;
+  border: 5px solid blue;
   color: gray;
   transition: transform .5s;
 }
 
 .card:hover {
+
   border: 2px solid #32cd32;
   /*transform: scale(1.05);*/
 }
@@ -27,5 +29,5 @@
 }
 
 .favorite-btn:hover {
-  background-color: #32cd32;
+  background-color: yellow;
 }
