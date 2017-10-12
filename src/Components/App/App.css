@@ -1,22 +1,32 @@
 .App {
   text-align: center;
+  background-image: url("http://www.astronomy.com/-/media/Images/News%20and%20Observing/News/2014/09/DDO68.jpg?mw=600");
 }
 
 body {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 .loading {
-  color: #fff;
+
+  height: 120px;
+  color: #FFE510;
   font-size: 100px;
   text-align: center;
+  background-color: black;
+  margin: auto;
+  padding-top: 30px;
 }
 
 .button-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .gif-container {
   text-align: center;
+}
+
+img {
+  width: 600px;
 }
