@@ -31,7 +31,7 @@ module.exports = {
     "func-call-spacing": ["error", "never"],
     "keyword-spacing": ["error", { "before": true, "after": true }],
     "max-len": ["warn", 80],
-    "no-duplicate-imports": "error",
+    "no-duplicate-imports": [0],
     "id-length": "error",
     "id-blacklist": ["error", "err", "cb", "callback", "payload", "arr"],
     "max-depth": ["warn", 4]

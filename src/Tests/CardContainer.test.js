@@ -1,5 +1,4 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import { mount, shallow } from 'enzyme';
 import CardContainer from '../Components/CardContainer/CardContainer';
 import Enzyme from 'enzyme';
@@ -9,7 +8,7 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe('CardContainer', () => {
   let wrapper;
-  const mockFn = jest.fn()
+  const mockFn = jest.fn();
   const mockData = [{
     "Name": "Owen Lars",
     "Homeworld": "Tatooine",

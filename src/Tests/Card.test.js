@@ -8,7 +8,7 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe('Card', () => {
   let wrapper;
-  const mockFn = jest.fn()
+  const mockFn = jest.fn();
   const CardMock = {
     "Name": "Luke Skywalker",
     "Homeworld": "Tatooine",
