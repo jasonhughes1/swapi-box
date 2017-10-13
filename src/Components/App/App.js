@@ -22,7 +22,6 @@ class App extends Component {
     this.toggleActive = this.toggleActive.bind(this);
   }
 
-
   componentDidMount() {
     const films = fetch('https://swapi.co/api/films/')
       .then(data => data.json());
@@ -46,9 +45,6 @@ class App extends Component {
           });
       });
   }
-
-  //nest into funcitons and work on controll flow
-  //Potential break out parts into other functions
 
   fetchHomeworld(data) {
     const specificHomeworldData = data.map((world) => {

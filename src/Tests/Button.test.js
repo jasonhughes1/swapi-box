@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import Button from '../Components/Button/Button';
 import Enzyme from 'enzyme';
@@ -9,7 +8,6 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe('Button', () => {
   let wrapper;
-  const mockFn = jest.fn();
 
   beforeEach(() => {
     wrapper = shallow(<Button />);

@@ -89,7 +89,8 @@
 //       expect(pTag.text()).toEqual(pTagText);
 //
 //       expect(crawler.props().filmArray).toEqual(filmData);
-//       expect(crawler.props().whichCrawler).toEqual(wrapper.state().whichCrawler);
+//       expect(crawler.props().whichCrawler)
+//        .toEqual(wrapper.state().whichCrawler);
 //     });
 //
 //   test(`should render an instance of CardContainer,
@@ -112,8 +113,10 @@
 //       expect(article.hasClass('card')).toEqual(true);
 //
 //       expect(cardContainer.props().currentDataArray).toEqual(mockData);
-//       expect(cardContainer.props().favoritesArray).toEqual(wrapper.state().favoritesArray);
-//       expect(cardContainer.props().currentView).toEqual(wrapper.state().currentView);
+//       expect(cardContainer.props()
+//         .favoritesArray).toEqual(wrapper.state().favoritesArray);
+//       expect(cardContainer.props().currentView)
+//        .toEqual(wrapper.state().currentView);
 //
 //       expect(wrapper.state().favoritesArray.length).toEqual(2);
 //
@@ -185,27 +188,33 @@
 //
 //       expect(controls.exists()).toEqual(true);
 //
-//       expect(controls.props().favoritesArray).toEqual(wrapper.state().favoritesArray);
-//       expect(controls.props().currentView).toEqual(wrapper.state().currentView);
+//       expect(controls.props().favoritesArray)
+//        .toEqual(wrapper.state().favoritesArray);
+//       expect(controls.props().currentView)
+//         .toEqual(wrapper.state().currentView);
 //
 //       planetBtn.simulate('click');
 //
-//       expect(wrapper.state().currentDataArray).toEqual(wrapper.state().planetArray);
+//       expect(wrapper.state().currentDataArray)
+//        .toEqual(wrapper.state().planetArray);
 //       expect(wrapper.state().currentView).toEqual('Planets');
 //
 //       vehiclesBtn.simulate('click');
 //
-//       expect(wrapper.state().currentDataArray).toEqual(wrapper.state().vehicleArray);
+//       expect(wrapper.state().currentDataArray)
+//         .toEqual(wrapper.state().vehicleArray);
 //       expect(wrapper.state().currentView).toEqual('Vehicles');
 //
 //       favoritesBtn.simulate('click');
 //
-//       expect(wrapper.state().currentDataArray).toEqual(wrapper.state().favoritesArray);
+//       expect(wrapper.state().currentDataArray)
+//        .toEqual(wrapper.state().favoritesArray);
 //       expect(wrapper.state().currentView).toEqual('Favorites');
 //
 //       peopleBtn.simulate('click');
 //
-//       expect(wrapper.state().currentDataArray).toEqual(wrapper.state().peopleArray);
+//       expect(wrapper.state().currentDataArray)
+//        .toEqual(wrapper.state().peopleArray);
 //       expect(wrapper.state().currentView).toEqual('People');
 //     });
 // });

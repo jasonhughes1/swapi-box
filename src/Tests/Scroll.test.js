@@ -1,9 +1,7 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import { mount, shallow } from 'enzyme';
 import Scroll from '../Components/Scroll/Scroll';
 import ScrollMock from './mockData/ScrollMock';
-// import Button from '../Components/Button/Button';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
@@ -11,7 +9,7 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe('Scroll', () => {
   let wrapper;
-  const mockFn = jest.fn()
+  const mockFn = jest.fn();
 
   beforeEach(() => {
     wrapper = shallow(<Scroll
