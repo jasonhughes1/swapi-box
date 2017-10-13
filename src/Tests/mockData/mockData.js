@@ -1277,4 +1277,4 @@ export default {
   "planetURL": "https://swapi.co/api/planets/",
   "vehicleURL": "https://swapi.co/api/vehicles/",
   "scrollURL": "https://swapi.co/api/films/"
-}
+};

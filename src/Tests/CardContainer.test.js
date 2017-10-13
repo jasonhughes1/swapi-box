@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import { mount, shallow } from 'enzyme';
 import CardContainer from '../Components/CardContainer/CardContainer';
 import Enzyme from 'enzyme';
@@ -27,20 +27,20 @@ describe('CardContainer', () => {
     "Homeworld": "Tatooine",
     "Species": "Human",
     "Population": "200000"
-  }]
+  }];
 
   beforeEach(() => {
     wrapper = shallow(<CardContainer
-                      cardType={mockData}
-                      setFavorite={mockFn} />)
-  })
+      cardType={mockData}
+      setFavorite={mockFn} />);
+  });
 
   it('should exist', () => {
-    expect(wrapper).toBeDefined()
-  })
+    expect(wrapper).toBeDefined();
+  });
 
   it('should render cards to the page', () => {
-    expect(wrapper.find('Card').length).toEqual(3)
+    expect(wrapper.find('Card').length).toEqual(3);
   });
 
   it('should render message if no favorited cards', () => {
