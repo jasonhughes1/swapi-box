@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { mount, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import Button from '../Components/Button/Button';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
