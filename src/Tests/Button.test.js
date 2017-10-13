@@ -19,9 +19,4 @@ describe('Button', () => {
     expect(wrapper).toBeDefined();
   });
 
-//   it('should pass through all the correct props', () => {
-//     expect(wrapper.props()).toHaveProperty('children', 'people')
-//     expect(wrapper.props()).toHaveProperty('className', 'button')
-//     expect(wrapper.props()).toHaveProperty('onClick')
-//   })
 });
