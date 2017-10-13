@@ -44,6 +44,6 @@ Scroll.propTypes = {
   btnFn: PropTypes.func,
   toggleActive: PropTypes.func,
   numFav: PropTypes.number
-}
+};
 
 export default Scroll;
